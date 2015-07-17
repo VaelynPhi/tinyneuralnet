@@ -21,6 +21,7 @@ np.random.seed(1)
 
 # initialize weights randomly with mean 0
 syn0 = 2*np.random.random((3,1)) - 1
+print("syn0:", *syn0)
 
 for iter in range(10000):
 

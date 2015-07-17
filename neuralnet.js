@@ -24,9 +24,18 @@ function transpose(A){
 	return At;
 }
 
+function generateSynapse(size){
+	var syn = [];
+	for(var i=size; i>0; i--){
+		syn.push(2*Math.random()-1);
+	}
+	return syn;
+}
+
+
 var X = [ [0,0,1], [0,1,1], [1,0,1], [1,1,1] ];
 var y = [0,0,1,1];
-var syn0 = [-0.16595599, 0.44064899, -0.99977125];
+var syn0 = generateSynapse(3);
 
 var iterations = 10000;
 while(iterations--){
