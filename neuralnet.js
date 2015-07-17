@@ -24,10 +24,13 @@ function transpose(A){
 	return At;
 }
 
-function generateSynapse(size){
+function generateSynapse(sizeIn, sizeOut){
 	var syn = [];
-	for(var i=size; i>0; i--){
-		syn.push(2*Math.random()-1);
+	for(var i=sizeIn; i>0; i--){
+		syn[i] = [];
+		for(var j=sizeOut; j>0; j--){
+			syn[i][j] = 2*Math.random() - 1;
+		}
 	}
 	return syn;
 }
