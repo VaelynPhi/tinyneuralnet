@@ -1,3 +1,3 @@
-Straightforward conversion of the neural network in Python from https://github.com/VaelynPhi/neuralnet to javascript.
+Straightforward conversion of the neural network in Python from http://iamtrask.github.io/2015/07/12/basic-python-network/ to javascript.
 
 The files neuralnet.py/.js contain the original and the conversion, respectively. The other two versions are my tinkering to get the various functions that map to numpy's dot, as well as the original author's step function.
